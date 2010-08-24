@@ -1,0 +1,1 @@
+ActionController::Resources::Resource.class_eval { include DeleteAction }
