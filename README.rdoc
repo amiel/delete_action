@@ -1,0 +1,21 @@
+== Delete Action
+
+This rails plugin adds an extra action to the default @map.resources@ routing set.
+It is really just a shorthand for
+
+  map.resources :widgets, :member => { :delete => :get }
+
+== Example
+
+  map.resources :widgets
+  
+Will now map the following actions:
+
+  # GET widgets_url                 => index
+  # GET new_widget_url              => new
+  # POST widgets_url                => create
+  # GET widget_url(:id => 1)        => show
+  # GET edit_widget_url(:id => 1)   => edit
+  # PUT widget_url(:id => 1)        => update
+  # GET delete_widget_url(:id => 1) => delete
+  # DELETE widget_url(:id => 1)     => destroy
