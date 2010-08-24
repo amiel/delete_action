@@ -5,6 +5,9 @@ It is really just a shorthand for
 
   map.resources :widgets, :member => { :delete => :get }
 
+The idea is to have an action for a confirm delete form, which we tend to render in a modal.
+This offers a similar user experience to @link_to "widget", widget_url(widget), :method => :delete, :confirm => 'string'@, but allows for an unobtrusive case.
+
 == Example
 
   map.resources :widgets
