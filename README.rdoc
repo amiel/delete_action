@@ -8,6 +8,12 @@ It is really just a shorthand for
 The idea is to have an action for a confirm delete form, which we tend to render in a modal.
 This offers a similar user experience to <code>link_to "widget", widget_url(widget), :method => :delete, :confirm => 'string'</code> but allows for an unobtrusive case.
 
+== Rails 3
+
+See my blog post here: http://blog.amielmartin.com/post/1216720481/delete-action-in-rails-3
+
+The next time I end up using this pattern I will probably come back and update this plugin...
+
 == Example
 
   map.resources :widgets
