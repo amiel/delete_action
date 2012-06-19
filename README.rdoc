@@ -1,6 +1,6 @@
 == Delete Action
 
-This rails plugin adds an extra action to the default @map.resources@ routing set.
+This rails plugin adds an extra action to the default `map.resources` routing set.
 It is really just a shorthand for
 
   map.resources :widgets, :member => { :delete => :get }
